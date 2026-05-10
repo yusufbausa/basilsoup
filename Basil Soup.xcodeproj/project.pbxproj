@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38398AF92FB10842009D304B /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEB2FB10842009D304B /* MenuSection.swift */; };
+		38398AFA2FB10842009D304B /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398ADE2FB10842009D304B /* CartItem.swift */; };
+		38398AFB2FB10842009D304B /* POSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE72FB10842009D304B /* POSViewModel.swift */; };
+		38398AFC2FB10842009D304B /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEE2FB10842009D304B /* Badges.swift */; };
+		38398AFD2FB10842009D304B /* DashboardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEA2FB10842009D304B /* DashboardSection.swift */; };
+		38398AFE2FB10842009D304B /* BackOfficeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE52FB10842009D304B /* BackOfficeViewModel.swift */; };
+		38398AFF2FB10842009D304B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398ADD2FB10842009D304B /* ContentView.swift */; };
+		38398B002FB10842009D304B /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF22FB10842009D304B /* TopBar.swift */; };
+		38398B012FB10842009D304B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE02FB10842009D304B /* Order.swift */; };
+		38398B022FB10842009D304B /* BasilSoupPOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398ADB2FB10842009D304B /* BasilSoupPOSApp.swift */; };
+		38398B032FB10842009D304B /* CategoryPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF02FB10842009D304B /* CategoryPill.swift */; };
+		38398B042FB10842009D304B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE32FB10842009D304B /* Persistence.swift */; };
+		38398B052FB10842009D304B /* CartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEF2FB10842009D304B /* CartRow.swift */; };
+		38398B062FB10842009D304B /* BackOfficeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE92FB10842009D304B /* BackOfficeView.swift */; };
+		38398B072FB10842009D304B /* MenuItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF12FB10842009D304B /* MenuItemCard.swift */; };
+		38398B082FB10842009D304B /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE62FB10842009D304B /* MenuViewModel.swift */; };
+		38398B092FB10842009D304B /* POSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF62FB10842009D304B /* POSView.swift */; };
+		38398B0A2FB10842009D304B /* OrderPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF52FB10842009D304B /* OrderPanel.swift */; };
+		38398B0B2FB10842009D304B /* CheckoutSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AF42FB10842009D304B /* CheckoutSheet.swift */; };
+		38398B0C2FB10842009D304B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398ADF2FB10842009D304B /* MenuItem.swift */; };
+		38398B0D2FB10842009D304B /* OrdersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEC2FB10842009D304B /* OrdersSection.swift */; };
+		38398B0E2FB10842009D304B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE22FB10842009D304B /* Extensions.swift */; };
+		38398B102FB109F7009D304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38398B0F2FB109F7009D304B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38398ABF2FB107EB009D304B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38398AA92FB107EA009D304B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38398AB02FB107EA009D304B;
+			remoteInfo = "Basil Soup";
+		};
+		38398AC92FB107EB009D304B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38398AA92FB107EA009D304B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38398AB02FB107EA009D304B;
+			remoteInfo = "Basil Soup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38398AB12FB107EA009D304B /* Basil Soup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basil Soup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38398ABE2FB107EB009D304B /* Basil SoupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basil SoupTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38398AC82FB107EB009D304B /* Basil SoupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basil SoupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38398ADB2FB10842009D304B /* BasilSoupPOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasilSoupPOSApp.swift; sourceTree = "<group>"; };
+		38398ADD2FB10842009D304B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		38398ADE2FB10842009D304B /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		38398ADF2FB10842009D304B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		38398AE02FB10842009D304B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		38398AE22FB10842009D304B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		38398AE32FB10842009D304B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		38398AE52FB10842009D304B /* BackOfficeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackOfficeViewModel.swift; sourceTree = "<group>"; };
+		38398AE62FB10842009D304B /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		38398AE72FB10842009D304B /* POSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSViewModel.swift; sourceTree = "<group>"; };
+		38398AE92FB10842009D304B /* BackOfficeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackOfficeView.swift; sourceTree = "<group>"; };
+		38398AEA2FB10842009D304B /* DashboardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSection.swift; sourceTree = "<group>"; };
+		38398AEB2FB10842009D304B /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		38398AEC2FB10842009D304B /* OrdersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersSection.swift; sourceTree = "<group>"; };
+		38398AEE2FB10842009D304B /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		38398AEF2FB10842009D304B /* CartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRow.swift; sourceTree = "<group>"; };
+		38398AF02FB10842009D304B /* CategoryPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPill.swift; sourceTree = "<group>"; };
+		38398AF12FB10842009D304B /* MenuItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCard.swift; sourceTree = "<group>"; };
+		38398AF22FB10842009D304B /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		38398AF42FB10842009D304B /* CheckoutSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutSheet.swift; sourceTree = "<group>"; };
+		38398AF52FB10842009D304B /* OrderPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPanel.swift; sourceTree = "<group>"; };
+		38398AF62FB10842009D304B /* POSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSView.swift; sourceTree = "<group>"; };
+		38398B0F2FB109F7009D304B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38398AAE2FB107EA009D304B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398ABB2FB107EB009D304B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398AC52FB107EB009D304B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38398AA82FB107EA009D304B = {
+			isa = PBXGroup;
+			children = (
+				38398B0F2FB109F7009D304B /* Assets.xcassets */,
+				38398ADC2FB10842009D304B /* App */,
+				38398ADD2FB10842009D304B /* ContentView.swift */,
+				38398AE12FB10842009D304B /* Models */,
+				38398AE42FB10842009D304B /* Utilities */,
+				38398AE82FB10842009D304B /* ViewModels */,
+				38398AF82FB10842009D304B /* Views */,
+				38398AB22FB107EA009D304B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38398AB22FB107EA009D304B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38398AB12FB107EA009D304B /* Basil Soup.app */,
+				38398ABE2FB107EB009D304B /* Basil SoupTests.xctest */,
+				38398AC82FB107EB009D304B /* Basil SoupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38398ADC2FB10842009D304B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				38398ADB2FB10842009D304B /* BasilSoupPOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		38398AE12FB10842009D304B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38398ADE2FB10842009D304B /* CartItem.swift */,
+				38398ADF2FB10842009D304B /* MenuItem.swift */,
+				38398AE02FB10842009D304B /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38398AE42FB10842009D304B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				38398AE22FB10842009D304B /* Extensions.swift */,
+				38398AE32FB10842009D304B /* Persistence.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		38398AE82FB10842009D304B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38398AE52FB10842009D304B /* BackOfficeViewModel.swift */,
+				38398AE62FB10842009D304B /* MenuViewModel.swift */,
+				38398AE72FB10842009D304B /* POSViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		38398AED2FB10842009D304B /* BackOffice */ = {
+			isa = PBXGroup;
+			children = (
+				38398AE92FB10842009D304B /* BackOfficeView.swift */,
+				38398AEA2FB10842009D304B /* DashboardSection.swift */,
+				38398AEB2FB10842009D304B /* MenuSection.swift */,
+				38398AEC2FB10842009D304B /* OrdersSection.swift */,
+			);
+			path = BackOffice;
+			sourceTree = "<group>";
+		};
+		38398AF32FB10842009D304B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				38398AEE2FB10842009D304B /* Badges.swift */,
+				38398AEF2FB10842009D304B /* CartRow.swift */,
+				38398AF02FB10842009D304B /* CategoryPill.swift */,
+				38398AF12FB10842009D304B /* MenuItemCard.swift */,
+				38398AF22FB10842009D304B /* TopBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		38398AF72FB10842009D304B /* POS */ = {
+			isa = PBXGroup;
+			children = (
+				38398AF42FB10842009D304B /* CheckoutSheet.swift */,
+				38398AF52FB10842009D304B /* OrderPanel.swift */,
+				38398AF62FB10842009D304B /* POSView.swift */,
+			);
+			path = POS;
+			sourceTree = "<group>";
+		};
+		38398AF82FB10842009D304B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38398AED2FB10842009D304B /* BackOffice */,
+				38398AF32FB10842009D304B /* Components */,
+				38398AF72FB10842009D304B /* POS */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38398AB02FB107EA009D304B /* Basil Soup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38398AD22FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil Soup" */;
+			buildPhases = (
+				38398AAD2FB107EA009D304B /* Sources */,
+				38398AAE2FB107EA009D304B /* Frameworks */,
+				38398AAF2FB107EA009D304B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Basil Soup";
+			packageProductDependencies = (
+			);
+			productName = "Basil Soup";
+			productReference = 38398AB12FB107EA009D304B /* Basil Soup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38398ABD2FB107EB009D304B /* Basil SoupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38398AD52FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil SoupTests" */;
+			buildPhases = (
+				38398ABA2FB107EB009D304B /* Sources */,
+				38398ABB2FB107EB009D304B /* Frameworks */,
+				38398ABC2FB107EB009D304B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38398AC02FB107EB009D304B /* PBXTargetDependency */,
+			);
+			name = "Basil SoupTests";
+			packageProductDependencies = (
+			);
+			productName = "Basil SoupTests";
+			productReference = 38398ABE2FB107EB009D304B /* Basil SoupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38398AC72FB107EB009D304B /* Basil SoupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38398AD82FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil SoupUITests" */;
+			buildPhases = (
+				38398AC42FB107EB009D304B /* Sources */,
+				38398AC52FB107EB009D304B /* Frameworks */,
+				38398AC62FB107EB009D304B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38398ACA2FB107EB009D304B /* PBXTargetDependency */,
+			);
+			name = "Basil SoupUITests";
+			packageProductDependencies = (
+			);
+			productName = "Basil SoupUITests";
+			productReference = 38398AC82FB107EB009D304B /* Basil SoupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38398AA92FB107EA009D304B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					38398AB02FB107EA009D304B = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					38398ABD2FB107EB009D304B = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 38398AB02FB107EA009D304B;
+					};
+					38398AC72FB107EB009D304B = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 38398AB02FB107EA009D304B;
+					};
+				};
+			};
+			buildConfigurationList = 38398AAC2FB107EA009D304B /* Build configuration list for PBXProject "Basil Soup" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38398AA82FB107EA009D304B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 38398AB22FB107EA009D304B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38398AB02FB107EA009D304B /* Basil Soup */,
+				38398ABD2FB107EB009D304B /* Basil SoupTests */,
+				38398AC72FB107EB009D304B /* Basil SoupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38398AAF2FB107EA009D304B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38398B102FB109F7009D304B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398ABC2FB107EB009D304B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398AC62FB107EB009D304B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38398AAD2FB107EA009D304B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38398AF92FB10842009D304B /* MenuSection.swift in Sources */,
+				38398AFA2FB10842009D304B /* CartItem.swift in Sources */,
+				38398AFB2FB10842009D304B /* POSViewModel.swift in Sources */,
+				38398AFC2FB10842009D304B /* Badges.swift in Sources */,
+				38398AFD2FB10842009D304B /* DashboardSection.swift in Sources */,
+				38398AFE2FB10842009D304B /* BackOfficeViewModel.swift in Sources */,
+				38398AFF2FB10842009D304B /* ContentView.swift in Sources */,
+				38398B002FB10842009D304B /* TopBar.swift in Sources */,
+				38398B012FB10842009D304B /* Order.swift in Sources */,
+				38398B022FB10842009D304B /* BasilSoupPOSApp.swift in Sources */,
+				38398B032FB10842009D304B /* CategoryPill.swift in Sources */,
+				38398B042FB10842009D304B /* Persistence.swift in Sources */,
+				38398B052FB10842009D304B /* CartRow.swift in Sources */,
+				38398B062FB10842009D304B /* BackOfficeView.swift in Sources */,
+				38398B072FB10842009D304B /* MenuItemCard.swift in Sources */,
+				38398B082FB10842009D304B /* MenuViewModel.swift in Sources */,
+				38398B092FB10842009D304B /* POSView.swift in Sources */,
+				38398B0A2FB10842009D304B /* OrderPanel.swift in Sources */,
+				38398B0B2FB10842009D304B /* CheckoutSheet.swift in Sources */,
+				38398B0C2FB10842009D304B /* MenuItem.swift in Sources */,
+				38398B0D2FB10842009D304B /* OrdersSection.swift in Sources */,
+				38398B0E2FB10842009D304B /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398ABA2FB107EB009D304B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38398AC42FB107EB009D304B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38398AC02FB107EB009D304B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38398AB02FB107EA009D304B /* Basil Soup */;
+			targetProxy = 38398ABF2FB107EB009D304B /* PBXContainerItemProxy */;
+		};
+		38398ACA2FB107EB009D304B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38398AB02FB107EA009D304B /* Basil Soup */;
+			targetProxy = 38398AC92FB107EB009D304B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38398AD02FB107EB009D304B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38398AD12FB107EB009D304B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		38398AD32FB107EB009D304B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-Soup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		38398AD42FB107EB009D304B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-Soup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		38398AD62FB107EB009D304B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-SoupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basil Soup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Basil Soup";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		38398AD72FB107EB009D304B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-SoupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basil Soup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Basil Soup";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		38398AD92FB107EB009D304B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-SoupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = "Basil Soup";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		38398ADA2FB107EB009D304B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML68F8WT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basil.Basil-SoupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = "Basil Soup";
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38398AAC2FB107EA009D304B /* Build configuration list for PBXProject "Basil Soup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38398AD02FB107EB009D304B /* Debug */,
+				38398AD12FB107EB009D304B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38398AD22FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil Soup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38398AD32FB107EB009D304B /* Debug */,
+				38398AD42FB107EB009D304B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38398AD52FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil SoupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38398AD62FB107EB009D304B /* Debug */,
+				38398AD72FB107EB009D304B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38398AD82FB107EB009D304B /* Build configuration list for PBXNativeTarget "Basil SoupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38398AD92FB107EB009D304B /* Debug */,
+				38398ADA2FB107EB009D304B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38398AA92FB107EA009D304B /* Project object */;
+}
