@@ -90,7 +90,7 @@ struct EditOrderSheet: View {
             Divider().background(Color.border)
 
             ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 110), spacing: 8)], spacing: 8) {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 8)], spacing: 8) {
                     ForEach(filteredMenu) { item in
                         MenuItemCard(item: item) { addItem(item) }
                     }

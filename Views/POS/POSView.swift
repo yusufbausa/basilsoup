@@ -32,7 +32,7 @@ struct POSView: View {
             OrderPanel(
                 showCheckout: $showCheckout
             )
-            .frame(width: 300)
+            .frame(width: 400)
         }
         // ── Checkout sheet ──────────────────────
         .sheet(isPresented: $showCheckout) {
@@ -86,7 +86,7 @@ struct POSView: View {
     private var menuGrid: some View {
         ScrollView {
             LazyVGrid(
-                columns: [GridItem(.adaptive(minimum: 140), spacing: 10)],
+                columns: [GridItem(.adaptive(minimum: 200), spacing: 10)],
                 spacing: 10
             ) {
                 ForEach(menuVM.filteredMenu) { item in
