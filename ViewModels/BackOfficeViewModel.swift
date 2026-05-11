@@ -1,64 +1,51 @@
 // ViewModels/BackOfficeViewModel.swift
-// ─────────────────────────────────────────────
-// Derives dashboard statistics from POSViewModel's
-// orders array. Does NOT own any data itself —
-// it reads from POSViewModel and MenuViewModel,
-// keeping a single source of truth.
-//
-// BackOfficeView creates this locally and passes
-// the two shared VMs in via the constructor.
 
 import Foundation
 import Combine
 
 final class BackOfficeViewModel: ObservableObject {
 
-    // MARK: - Dependencies (injected, not owned)
-
-    private let posVM:  POSViewModel
-    private let menuVM: MenuViewModel
+    // MARK: - Dependencies (set via setup, not init)
+    private var posVM:  POSViewModel?
+    private var menuVM: MenuViewModel?
 
     // MARK: - Published state
-
-    @Published var orderTypeFilter: Order.OrderType? = nil  // nil = show all
+    @Published var orderTypeFilter: Order.OrderType? = nil
     @Published var searchText:      String           = ""
 
-    // MARK: - Init
+    // MARK: - Init & setup
+    init() {}
 
-    init(posVM: POSViewModel, menuVM: MenuViewModel) {
+    func setup(posVM: POSViewModel, menuVM: MenuViewModel) {
         self.posVM  = posVM
         self.menuVM = menuVM
     }
 
     // MARK: - Dashboard stats
-
-    var todayRevenue:    Double { posVM.todayRevenue }
-    var todayOrderCount: Int    { posVM.todayOrders.count }
-    var averageOrder:    Double { posVM.averageOrderValue }
-    var allTimeRevenue:  Double { posVM.allTimeRevenue }
-    var allOrderCount:   Int    { posVM.orders.count }
-    var menuItemCount:   Int    { menuVM.menu.count }
-    var availableCount:  Int    { menuVM.availableCount }
+    var todayRevenue:    Double { posVM?.todayRevenue    ?? 0 }
+    var todayOrderCount: Int    { posVM?.todayOrders.count ?? 0 }
+    var averageOrder:    Double { posVM?.averageOrderValue ?? 0 }
+    var allTimeRevenue:  Double { posVM?.allTimeRevenue  ?? 0 }
+    var allOrderCount:   Int    { posVM?.orders.count    ?? 0 }
+    var menuItemCount:   Int    { menuVM?.menu.count     ?? 0 }
+    var availableCount:  Int    { menuVM?.availableCount ?? 0 }
 
     var recentOrders: [Order] {
-        Array(posVM.orders.prefix(10))
+        Array((posVM?.orders ?? []).prefix(10))
     }
 
     var chartData: [(label: String, revenue: Double)] {
-        posVM.revenueLastSevenDays()
+        posVM?.revenueLastSevenDays() ?? []
     }
 
-    // MARK: - Filtered orders for Orders section
-
+    // MARK: - Filtered orders
     var filteredOrders: [Order] {
-        posVM.orders
+        (posVM?.orders ?? [])
             .filter { order in
-                // Type filter
                 guard let typeFilter = orderTypeFilter else { return true }
                 return order.type == typeFilter
             }
             .filter { order in
-                // Search filter — matches order number
                 guard !searchText.isEmpty else { return true }
                 return String(order.orderNumber).contains(searchText)
             }

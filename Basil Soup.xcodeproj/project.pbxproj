@@ -30,6 +30,8 @@
 		38398B0D2FB10842009D304B /* OrdersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AEC2FB10842009D304B /* OrdersSection.swift */; };
 		38398B0E2FB10842009D304B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38398AE22FB10842009D304B /* Extensions.swift */; };
 		38398B102FB109F7009D304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38398B0F2FB109F7009D304B /* Assets.xcassets */; };
+		38A0E1462FB26EA6003DAC1D /* EditOrderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0E1452FB26EA6003DAC1D /* EditOrderSheet.swift */; };
+		38A0E1482FB273C0003DAC1D /* OrderDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0E1472FB273C0003DAC1D /* OrderDetailSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		38398AF52FB10842009D304B /* OrderPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPanel.swift; sourceTree = "<group>"; };
 		38398AF62FB10842009D304B /* POSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSView.swift; sourceTree = "<group>"; };
 		38398B0F2FB109F7009D304B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38A0E1452FB26EA6003DAC1D /* EditOrderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrderSheet.swift; sourceTree = "<group>"; };
+		38A0E1472FB273C0003DAC1D /* OrderDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		38398AED2FB10842009D304B /* BackOffice */ = {
 			isa = PBXGroup;
 			children = (
+				38A0E1472FB273C0003DAC1D /* OrderDetailSheet.swift */,
 				38398AE92FB10842009D304B /* BackOfficeView.swift */,
 				38398AEA2FB10842009D304B /* DashboardSection.swift */,
 				38398AEB2FB10842009D304B /* MenuSection.swift */,
@@ -190,6 +195,7 @@
 		38398AF72FB10842009D304B /* POS */ = {
 			isa = PBXGroup;
 			children = (
+				38A0E1452FB26EA6003DAC1D /* EditOrderSheet.swift */,
 				38398AF42FB10842009D304B /* CheckoutSheet.swift */,
 				38398AF52FB10842009D304B /* OrderPanel.swift */,
 				38398AF62FB10842009D304B /* POSView.swift */,
@@ -352,6 +358,7 @@
 				38398AFF2FB10842009D304B /* ContentView.swift in Sources */,
 				38398B002FB10842009D304B /* TopBar.swift in Sources */,
 				38398B012FB10842009D304B /* Order.swift in Sources */,
+				38A0E1482FB273C0003DAC1D /* OrderDetailSheet.swift in Sources */,
 				38398B022FB10842009D304B /* BasilSoupPOSApp.swift in Sources */,
 				38398B032FB10842009D304B /* CategoryPill.swift in Sources */,
 				38398B042FB10842009D304B /* Persistence.swift in Sources */,
@@ -362,6 +369,7 @@
 				38398B092FB10842009D304B /* POSView.swift in Sources */,
 				38398B0A2FB10842009D304B /* OrderPanel.swift in Sources */,
 				38398B0B2FB10842009D304B /* CheckoutSheet.swift in Sources */,
+				38A0E1462FB26EA6003DAC1D /* EditOrderSheet.swift in Sources */,
 				38398B0C2FB10842009D304B /* MenuItem.swift in Sources */,
 				38398B0D2FB10842009D304B /* OrdersSection.swift in Sources */,
 				38398B0E2FB10842009D304B /* Extensions.swift in Sources */,

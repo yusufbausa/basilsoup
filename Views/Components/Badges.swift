@@ -35,8 +35,8 @@ struct StatusBadge: View {
     private var color: Color {
         switch status {
         case .paid:     return .success
+        case .edited:   return .gold
         case .refunded: return .danger
-        case .edited: return .success
         }
     }
 

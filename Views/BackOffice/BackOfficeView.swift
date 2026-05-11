@@ -1,24 +1,17 @@
 // Views/BackOffice/BackOfficeView.swift
-// ─────────────────────────────────────────────
-// Root view of the Back Office screen.
-// Renders a sidebar + content area.
-// Creates BackOfficeViewModel locally, injecting the
-// two shared VMs from the environment.
 
 import SwiftUI
 
 struct BackOfficeView: View {
 
-    // MARK: - Environment
-
     @EnvironmentObject private var posVM:  POSViewModel
     @EnvironmentObject private var menuVM: MenuViewModel
 
-    // MARK: - Local state
-
     @State private var activeSection: BOSection = .dashboard
 
-    // MARK: - Body
+    // BackOfficeViewModel held as @StateObject so it's
+    // NOT recreated on every redraw
+    @StateObject private var boVM = BackOfficeViewModel()
 
     var body: some View {
         HStack(spacing: 0) {
@@ -26,17 +19,15 @@ struct BackOfficeView: View {
             Divider().background(Color.border)
             content
         }
+        .onAppear {
+            boVM.setup(posVM: posVM, menuVM: menuVM)
+        }
     }
-
-    // MARK: - Sidebar
 
     private var sidebar: some View {
         VStack(alignment: .leading, spacing: 2) {
             ForEach(BOSection.allCases, id: \.self) { section in
-                SidebarItem(
-                    section:       section,
-                    activeSection: $activeSection
-                )
+                SidebarItem(section: section, activeSection: $activeSection)
             }
             Spacer()
         }
@@ -45,23 +36,14 @@ struct BackOfficeView: View {
         .background(Color.surface)
     }
 
-    // MARK: - Content area
-
     @ViewBuilder
     private var content: some View {
-        // BackOfficeViewModel is created here, not in the App,
-        // because it's only needed when this screen is visible.
-        let boVM = BackOfficeViewModel(posVM: posVM, menuVM: menuVM)
-
         ScrollView {
             Group {
                 switch activeSection {
-                case .dashboard:
-                    DashboardSection(boVM: boVM)
-                case .orders:
-                    OrdersSection(boVM: boVM)
-                case .menu:
-                    MenuSection()
+                case .dashboard: DashboardSection(boVM: boVM)
+                case .orders:    OrdersSection(boVM: boVM)
+                case .menu:      MenuSection()
                 }
             }
             .padding(28)
@@ -71,8 +53,7 @@ struct BackOfficeView: View {
     }
 }
 
-// MARK: - BOSection enum
-
+// MARK: - BOSection
 enum BOSection: String, CaseIterable {
     case dashboard = "Dashboard"
     case orders    = "Orders"
@@ -88,10 +69,8 @@ enum BOSection: String, CaseIterable {
 }
 
 // MARK: - Sidebar item
-
 private struct SidebarItem: View {
-
-    let section:       BOSection
+    let section: BOSection
     @Binding var activeSection: BOSection
 
     private var isActive: Bool { activeSection == section }
@@ -101,29 +80,21 @@ private struct SidebarItem: View {
             activeSection = section
         } label: {
             HStack(spacing: 10) {
-                Image(systemName: section.icon)
-                    .font(.system(size: 15))
-                Text(section.rawValue)
-                    .font(.system(size: 13, weight: .medium))
+                Image(systemName: section.icon).font(.system(size: 15))
+                Text(section.rawValue).font(.system(size: 13, weight: .medium))
             }
             .foregroundColor(isActive ? .gold : .textMuted)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
+            .padding(.horizontal, 16).padding(.vertical, 10)
             .background(isActive ? Color.surface2 : Color.clear)
             .overlay(alignment: .leading) {
-                if isActive {
-                    Rectangle()
-                        .fill(Color.gold)
-                        .frame(width: 2)
-                }
+                if isActive { Rectangle().fill(Color.gold).frame(width: 2) }
             }
         }
         .buttonStyle(.plain)
     }
 }
 
-// MARK: - Preview
 #Preview {
     BackOfficeView()
         .environmentObject(POSViewModel())

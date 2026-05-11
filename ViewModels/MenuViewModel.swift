@@ -57,6 +57,20 @@ final class MenuViewModel: ObservableObject {
         saveMenu()
     }
 
+    /// Updates an existing menu item's editable fields.
+    func updateItem(_ item: MenuItem,
+                    name:     String,
+                    price:    Double,
+                    category: String,
+                    emoji:    String) {
+        guard let index = menu.firstIndex(where: { $0.id == item.id }) else { return }
+        menu[index].name     = name
+        menu[index].price    = price
+        menu[index].category = category
+        menu[index].emoji    = emoji.isEmpty ? "🍽" : emoji
+        saveMenu()
+    }
+
     // MARK: - Computed helpers
 
     var availableCount: Int {
